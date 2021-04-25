@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game Workshop</title>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
+    <script src="test.js"></script>
+    <style>
+           body {
+    font-family: 'Alegreya SC';font-size: 22px;
+    text-align: center;
+}
+        .grid {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto  ;
+            width: 1200px;
+            margin: auto auto;
+        }
+
+        .bg {
+    display: flex;
+    background-image:
+     url('https://cdn1.dotesports.com/wp-content/uploads/2018/11/22020513/Screenshot-1271.png');
+    background-size: cover;
+    flex-direction: row;
+        width: 100%;
+        height: 240px;
+
+
+        }
+
+        .bg1{
+            background-image:
+    linear-gradient(to left, rgba(0, 2, 7, 0.52), rgba(218, 214, 214, 0.774)),
+    url('https://wallpaperaccess.com/full/1376115.jpg');
+    width: 100%;
+    background-attachment: fixed; 
+    height: 1400px;
+    background-size: cover;
+    color: white;
+    text-align: center;
+        }
+    .logo{
+      
+        margin: auto auto;
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="logo">
+        <img src="http://assets.stickpng.com/images/58eeb797ee9418469d17ee04.png" alt=""  width="40%" id="logo">
+    </div>
+    </div>
+
+    <div class="bg1">
+    <div class="title"> <br>
+        <h1>Memory Game</h1>
+        <h4>Score: <span id="gameScore">0</span></h4>
+        <h4>Message:<span id="gameConsole">Game start!</span></h4>
+    </div> 
+    <div id="GameBoard"></div>
+</div>
+</body>
+</html>
